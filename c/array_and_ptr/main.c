@@ -4,4 +4,6 @@ int main()
 {
 	showOneDimenArray();
 
+	showTwoDimenArray();
+
 }

@@ -9,5 +9,6 @@
 #define INCLUDE_ARRAY_AND_PTR_H_
 
 void showOneDimenArray();
+void showTwoDimenArray();
 
 #endif /* INCLUDE_ARRAY_AND_PTR_H_ */
