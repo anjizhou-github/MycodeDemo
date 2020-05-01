@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include "../include/array_and_ptr.h"
+#include "array_and_ptr.h"
 
 void showOneDimenArray()
 {

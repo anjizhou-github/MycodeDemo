@@ -1,4 +1,4 @@
-#include "include/array_and_ptr.h"
+#include "array_and_ptr.h"
 
 int main()
 {
