@@ -1,13 +1,17 @@
-#include "array_and_ptr.h"
 #include <stdio.h>
+#include "array_and_ptr.h"
+#include "tailq.h"
+#include "linear_list_in_seq.h"
+
 enum SwitchCase {
 	Array_AND_PTR,
-	TAILQ
+	TAILQ,
+	LINEAR_LIST_IN_SQE
 };
 
 int main()
 {
-	enum SwitchCase switchCase = TAILQ;
+	enum SwitchCase switchCase = LINEAR_LIST_IN_SQE;
 
 	switch(switchCase)
 	{
@@ -19,10 +23,10 @@ int main()
 	case TAILQ:
 		tailq();
 		break;
+	case LINEAR_LIST_IN_SQE:
+		linear_list_in_seq_main();
+		break;
 	default:
-	        printf("你没有选择你喜欢的颜色");
+	        printf("default");
 	    }
-
-
-
 }
