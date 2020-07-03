@@ -11,7 +11,7 @@ enum SwitchCase {
 
 int main()
 {
-	enum SwitchCase switchCase = LINEAR_LIST_IN_SQE;
+	enum SwitchCase switchCase = TAILQ;
 
 	switch(switchCase)
 	{
@@ -22,6 +22,7 @@ int main()
 		break;
 	case TAILQ:
 		tailq();
+		tailq1();
 		break;
 	case LINEAR_LIST_IN_SQE:
 		linear_list_in_seq_main();

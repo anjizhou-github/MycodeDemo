@@ -15,5 +15,5 @@ struct queue_entry_t
 //就像有头节点的链表那样，这个是队列头。它有两个指针，分别指向队列的头和尾
 TAILQ_HEAD(queue_head_t, queue_entry_t);
 void tailq();
-
+void tailq1();
 

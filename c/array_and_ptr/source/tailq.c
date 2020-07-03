@@ -65,3 +65,33 @@ void tailq()
     p = TAILQ_PREV(p, queue_head_t, entry);
     printf("the entry before last is %d\n", p->value);
 }
+
+typedef struct Node
+{
+	int a;
+	struct Node *next;
+}LNode;
+
+void tailq1()
+{
+	LNode *Head = NULL;
+	Head = malloc(sizeof(LNode));
+	Head->a = 0;
+	Head->next = NULL;
+	for(int i = 1; i< 11; i++)
+	{
+		LNode *p = NULL;
+		p = malloc(sizeof(LNode));
+		printf("%d ,%p\n",i,p);
+		p->a = i;
+		p->next =Head->next;
+		Head->next = p;
+	}
+
+	LNode *ptr= Head;
+	while(NULL != ptr->next)
+	{
+		printf("a: %d p: %p\n",ptr->a,ptr);
+		ptr = ptr->next;
+	}
+}
